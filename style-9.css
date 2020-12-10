@@ -1,0 +1,157 @@
+#registration-form {
+  overflow: hidden;
+  padding: 100px 130px !important;
+  margin-top: -15px;
+}
+div.page-module #registration-form {
+  padding: 0 !important;
+}
+#registration-form > div {
+  align-items: center;
+  margin-top: 15px;
+}
+#registration-form > div > div:nth-child(1) {
+  text-align: right;
+}
+#registration-form input[type='text'],
+#registration-form input[type='password'] {
+  width: 100%;
+  background: #fff5e9;
+  color: #000;
+  border: 0;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+#registration-form select {
+  width: 100%;
+  background: #fff5e9;
+  color: #000;
+  border: 0;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+#registration-form label {
+  font-weight: 700;
+}
+#registration-form input[type='checkbox'] {
+  border: 0;
+  background: #fff5e9;
+  padding: 5px;
+  position: relative;
+}
+#registration-form input[type='checkbox']:checked:before {
+  content: '\f00c';
+  position: absolute;
+  z-index: 10000;
+  font: normal normal normal 14px/1 FontAwesome;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  color: #000;
+}
+#registration-form label[for] {
+  cursor: pointer;
+  display: inline-flex;
+}
+#registration-form .error {
+  text-align: center !important;
+  font-size: 16px;
+  color: red;
+}
+#registration-form .error.error-white {
+  text-align: center !important;
+  font-size: 16px;
+  color: #000;
+  background: none !important;
+}
+.comp-hid2 {
+  display: none;
+}
+.css-mini-loader-feu {
+  border: 2px solid #b5004e;
+  border-top: 2px solid #2d619d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin-feu 2s linear infinite;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+@keyframes spin-feu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.select2-container--feu-theme {
+  background: #fff5e9;
+  border: #fff5e9;
+  border-radius: 0;
+}
+.select2-container--feu-theme .select2-selection--single {
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+.select2-container--feu-theme
+  .select2-selection--single
+  .select2-selection__rendered {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  flex: auto;
+  font-size: 14px;
+  color: #6f717a;
+  white-space: nowrap;
+}
+.select2-container--feu-theme
+  .select2-selection--single
+  .select2-selection__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+}
+.select2-container--feu-theme
+  .select2-selection--single
+  .select2-selection__arrow:after {
+  content: '\f107';
+  font-family: FontAwesome;
+}
+.select2-container--feu-theme .select2-dropdown {
+  background: #fff5e9;
+  border-color: #fff5e9;
+  transform: translate(-1px, -5px);
+  border-radius: 0;
+  z-index: 30051;
+  max-height: 262px;
+  overflow-y: scroll;
+}
+.select2-container--feu-theme .select2-results__option {
+  padding: 6px 12px 6px 15px;
+  font-size: 14px;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.select2-container--feu-theme
+  .select2-results__option.select2-results__option--highlighted {
+  background: rgba(0, 0, 0, 0.03);
+}
+.select2-container--feu-theme.select2-container--open {
+  z-index: 1000000;
+}
+@media (max-width: 767px) {
+  #registration-form {
+    padding: 0 !important;
+  }
+  #registration-form > div > div:nth-child(1) {
+    text-align: left;
+  }
+}
